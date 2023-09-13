@@ -52,7 +52,7 @@
             ```shell
             docker compose version
             ```
-3. Follow below commands on WSL2
+3. Follow Below Commands on WSL2 to Install Airflow Locally (Link: https://www.youtube.com/watch?v=aTaytcxy2Ck)
     ```shell
     mkdir airflow-docker
     cd airflow-docker
