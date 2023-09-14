@@ -1,10 +1,9 @@
 # airflow
 Learn and Test Airflow Dags
 
+## To setup Airflow locally-
+1. Follow the setup guidance: [developer-guide.md](developer-guide.md)
 
-## Airflow
-1. Airflow has 3 components - 
-    1. Webserver
-    2. Scheduler
-    3. Metadata Databse
 
+## Learn Airflow -
+1. To learn airflow, follow this link - [Airflow-Readme.md](Airflow-Readme.md)
