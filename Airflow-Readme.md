@@ -16,16 +16,21 @@
     1. https://docs.astronomer.io/learn/airflow-components
 
 
-| Name | Description | Comments |
-| :--- | :------ | --- |
-| `1. Webserver` | A Flask server running with Gunicorn that serves the Airflow UI | |
-| `2. Scheduler` | A Daemon responsible for scheduling jobs. This is a multi-threaded Python process that determines what tasks need to be run, when they need to be run, and where they are run. `Executor` - The mechanism for running tasks. An executor is running within the scheduler whenever Airflow is operational. | |
-| `3. Metadata Databse` | where all DAG and task metadata are stored. This is typically a Postgres database, but MySQL, MsSQL, and SQLite are also supported. | |
-| | | |
+| ID | Name | Description | Remarks |
+| :--- | :--- | :------ | --- |
+| 1. | `Webserver` | A Flask server running with Gunicorn that serves the Airflow UI | |
+| 2. | `Scheduler` | A Daemon responsible for scheduling jobs. This is a multi-threaded Python process that determines what tasks need to be run, when they need to be run, and where they are run. An `executor` is running within the scheduler whenever Airflow is operational. | |
+| 3. | `Metadata Databse` | where all DAG and task metadata are stored. This is typically a Postgres database, but MySQL, MsSQL, and SQLite are also supported. | |
+| 4. | `Executor` | The mechanism for running tasks. An executor is running within the scheduler whenever Airflow is operational. | |
     
 ### Airflow DAG Properties-
 
-| Name | Description | Comments
-| :--- | :---: | :---
-| | |
+| ID | Name | Description | Remarks |
+| :--- | :--- | :------ | --- |
+| 1. | `dag` | Ref: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html <br>a. Directed Acyclic Graph <br>b. Its collects the tasks and execute them based on the dependencies | Main Component of Airflow (dag_id) | |
+| 2. | `operator` | Its similar like tasks, which executes the task operations | |
+| 3. | | | |
+| 4. | | | |
+| 5. | | | |
+| 6. | | | |
 

@@ -2,17 +2,20 @@
 
 
 ### Python Virtual Env Setup
-1. Create Virtual Env on powershell
+1. Create Virtual Env on powershell (*recommended*)
     ```shell
     python -m virtualenv .venv 
 
     Set-ExecutionPolicy Unrestricted -Scope Process
     .venv\\Scripts\\activate
+    pip install -r requirements.txt
     ```
-2. Create Virtual Env on WSL2
+2. Create Virtual Env on WSL2 (*not recommended as wsl2 is very slow*)
     ```shell
     sudo apt-get update
     sudo apt install python3-pip
+    # or
+    sudo apt-get install python3.10-venv
     sudo pip3 install virtualenv
 
     python3 -m virtualenv .venv
@@ -52,7 +55,7 @@
             ```shell
             docker compose version
             ```
-3. Follow Below Commands on WSL2 to Install Airflow Locally (Link: https://www.youtube.com/watch?v=aTaytcxy2Ck)
+3. Follow Below Commands on `WSL2` to Install Airflow Locally (Link: https://www.youtube.com/watch?v=aTaytcxy2Ck)
     ```shell
     mkdir airflow-docker
     cd airflow-docker
@@ -77,3 +80,11 @@
     curl -X GET --user "airflow:airflow" "http://localhost:8080/api/v1/dags" # will work
     ```
 4. Then open the link "http://localhost:8080/" in browser.
+
+
+### Run Docker daily basis
+```shell
+cd airflow-docker
+docker-compose up airflow-init
+docker-compose up
+```
