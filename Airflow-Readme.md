@@ -28,7 +28,7 @@
 | ID | Name | Description | Remarks |
 | :--- | :--- | :------ | --- |
 | 1. | `dag` | Ref: https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html <br>a. Directed Acyclic Graph <br>b. Its collects the tasks and execute them based on the dependencies | Main Component of Airflow (dag_id) | |
-| 2. | `operator` | Its similar like tasks, which executes the task operations | |
+| 2. | `operator` | Its similar like tasks, which executes the actual job/operations | |
 | 3. | | | |
 | 4. | | | |
 | 5. | | | |

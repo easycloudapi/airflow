@@ -87,4 +87,5 @@
 cd airflow-docker
 docker-compose up airflow-init
 docker-compose up
+docker-compose down && docker-compose up
 ```
